@@ -1,0 +1,84 @@
+<html>
+<style>
+html, body, #map_canvas {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px
+}
+</style>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAldON1uV9hiz3JN4qChntMUr-tnikKlPE"></script>
+<body>
+<div id="map_canvas"></div>
+<script>
+var colors = ["green", "green", "yellow", "red"];
+var lengths = ["M 100 100 L 150 100 L 150 110 L 100 110 z",
+"M 100 100 L 140 100 L 140 110 L 100 110 z",
+"M 100 100 L 130 100 L 130 110 L 100 110 z",
+"M 100 100 L 120 100 L 120 110 L 100 110 z"]
+
+function initialize() {
+    var map = new google.maps.Map(
+    document.getElementById("map_canvas"), {
+        center: new google.maps.LatLng(37.4419, -122.1419),
+        zoom: 13,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+    var soldier = new google.maps.Marker({
+      position: map.getCenter(),
+      map: map,
+      draggable: true,
+      icon: { url: "http://www.geocodezip.com/mapIcons/greenSoldier.png",
+       scaledSize: new google.maps.Size(32,48)
+      }
+    });
+    var health = new google.maps.Marker({
+      position: soldier.getPosition(),
+      map: map,
+      icon: { path: "M 100 100 L 150 100 L 150 110 L 100 110 z",
+      scale: 0.5,
+      fillColor: "red",
+      fillOpacity: 1.0,
+      strokeColor: "black",
+      strokeWeight: 2,
+      anchor: new google.maps.Point(125,110)
+      }
+    });
+    health.bindTo("position", soldier);
+	var soldier1 = new google.maps.Marker({
+      position: map.getCenter(),
+      map: map,
+      draggable: true,
+      icon: { url: "http://www.geocodezip.com/mapIcons/greenSoldier.png",
+       scaledSize: new google.maps.Size(32,48)
+      }
+    });
+    var health = new google.maps.Marker({
+      position: soldier1.getPosition(),
+      map: map,
+      icon: { path: "M 100 100 L 150 100 L 150 110 L 100 110 z",
+      scale: 0.5,
+      fillColor: "red",
+      fillOpacity: 1.0,
+      strokeColor: "black",
+      strokeWeight: 2,
+      anchor: new google.maps.Point(125,110)
+      }
+    });
+    health.bindTo("position", soldier1);
+    setInterval(changeLength, 5000);
+    var idx = 0;
+    function changeLength() {
+       var icon = health.getIcon();
+       icon.fillColor = colors[(idx) % colors.length];
+       icon.path = lengths[(idx++) % lengths.length];
+       health.setIcon(icon);
+    }
+
+}
+google.maps.event.addDomListener(window, "load", initialize);
+
+</script>
+</body>
+</html>

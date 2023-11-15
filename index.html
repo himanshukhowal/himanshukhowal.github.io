@@ -1,0 +1,1009 @@
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta name="keywords" content="ZR Themes" />
+	<meta name="description" content="Kar - Car Wash & Detailing Landing Page Template" />
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="assets/images/favicon.png">
+	<!-- Site All Style Sheet Css -->
+	<link href="assets/stylesheets/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/stylesheets/swiper.min.css" rel="stylesheet" />
+	<link href="assets/stylesheets/font-awesome.min.css" rel="stylesheet" />
+	<link href="assets/stylesheets/owl.carousel.min.css" rel="stylesheet" />
+	<link href="assets/stylesheets/owl.theme.default.min.css" rel="stylesheet" />
+	<link href="assets/stylesheets/animate.min.css" rel="stylesheet" />
+	<link href="assets/stylesheets/magnific-popup.css" rel="stylesheet" />
+	<!-- Site Main Style Sheet Css -->
+	<link href="assets/stylesheets/style.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        /* Button used to open the chat form - fixed at the bottom of the page */
+        .open-button {
+          background-color: #555;
+          color: white;
+          padding: 16px 20px;
+          border: none;
+          cursor: pointer;
+          opacity: 0.8;
+          position: fixed;
+          bottom: 23px;
+          right: 28px;
+          width: 280px;
+        }
+        
+        /* The popup chat - hidden by default */
+        .chat-popup {
+          display: none;
+          position: fixed;
+          bottom: 0;
+          right: 15px;
+          border: 3px solid #f1f1f1;
+          z-index: 9;
+        }
+        
+        /* Add styles to the form container */
+        .form-container {
+          max-width: 300px;
+          padding: 10px;
+          background-color: white;
+        }
+        
+        /* Full-width textarea */
+        .form-container textarea {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          border: none;
+          background: #f1f1f1;
+          resize: none;
+          min-height: 200px;
+        }
+        
+        /* When the textarea gets focus, do something */
+        .form-container textarea:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        /* Set a style for the submit/send button */
+        /* .form-container .btn {
+          background-color: #04AA6D;
+          color: white;
+          padding: 16px 20px;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          margin-bottom:10px;
+          opacity: 0.8;
+        } */
+        
+        /* Add a red background color to the cancel button */
+        /* .form-container .cancel {
+          background-color: red;
+        } */
+        
+        /* Add some hover effects to buttons */
+        .form-container .btn:hover, .open-button:hover {
+          opacity: 1;
+        }
+        </style>
+</head>
+
+<body onload="myfunction();">
+
+	<!-- Start Page Preloader Area -->
+	<div class="preloader" id="kar-theme-preloader">
+		<div class="preloader-wapper">
+			<div>
+				<div class="spinner-loader">
+                    <img src="assets/images/loader.svg" alt="laoder">
+                </div>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Preloader Area -->
+
+    <!-- Start Header Navbar Area -->
+    <header id="kar-theme-menu" class="kar-theme-menu-header-navber-area">
+        <nav class="navbar navbar-b navbar-trans navbar-expand-lg" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll" href="index.html">
+				<img src="assets/images/logo.png" class="white-logo" alt="logo">
+				<img src="assets/images/logo-black.png" class="black-logo" alt="logo">
+				<sup style="font-size:14px">(connected car)</sup>
+			</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation"> <span></span>  <span></span>  <span></span> 
+			</button>
+                <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link js-scroll active" href="#slider-home">Home</a></li>
+
+                        <li class="nav-item"><a class="nav-link js-scroll" href="#packages">Features</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll" href="#review">Review</a></li> -->
+                        <li class="nav-item book-now"><a class="nav-link js-scroll" href="#products"><i class="fa fa-calendar-check-o"></i> Location Finder</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll" href="#contact">Contact</a></li>
+						<li class="nav-item dropdown">
+  <span class="dropdown-toggle nav-link js-scroll" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Notification
+  </span>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#ota">Create Bond</a>
+    <a class="dropdown-item" href="#ota">Refresh Services</a>
+    <a class="dropdown-item" href="#ota">Request MTU</a>
+	   <a class="dropdown-item" href="#ota">Connection Interval</a>
+    <a class="dropdown-item" href="#ota">OTA DFU</a>
+  </div>
+</li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header Navbar Area -->
+	
+	<!-- Start Slider Are -->
+    <header id="slider-home" class="slider slider-prlx bg-b">
+        <div class="swiper-container parallax-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="bg-img valign" data-background="assets/images/slider-3.jpg" data-overlay-dark="6">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="caption text-center">
+                                        <h2>Akkodis car Connected services</h2>
+                                       
+                                        <p style="max-width: 700px; margin: 0 auto;">we're committed to earning your trust by providing the highest quality car repair services at a fair price.</p>
+                                        
+                                        <div class="home-button-box home-slider-btn">
+                                            <a href="#products" class="button home-btn js-scroll">Connect Us</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-img valign" data-background="assets/images/slider-1.jpg" data-overlay-dark="6">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="caption text-center">
+                                     <h2>Akkodis car Connected services</h2>
+                                        
+                                        <p style="max-width: 700px; margin: 0 auto;">we're committed to earning your trust by providing the highest quality car repair services at a fair price.</p>
+                                       
+                                        <div class="home-button-box home-slider-btn">
+                                            <a href="#0" class="button home-btn js-scroll">Connect Us</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+    <!-- End Slider Area -->
+	
+  
+	<section id="products" class="" style="margin-bottom:25px">
+        <div class="container">
+<div id="map_canvas"></div>
+</div>
+</section>
+
+	<section id="products" class="" style="margin-bottom:25px">
+        <div class="container">
+		
+			<div class="section-title ">
+                <h2>Avaliable Connected Service</h2>
+				
+			</div>
+	
+<div id="map" style="width:100%;height:400px;"></div>
+</div>
+</section>
+    <!-- Shop Now Section Start -->
+    
+   <!-- Shop Now Section End -->
+
+    <!-- Our Deals Section Start -->
+	<section id="packages" class="menu-day-area bg-grey section-padding">
+		<div class="container">
+			<div class="section-title">
+                <h2>Connected Vehicle Platforms Feature</h2>
+				
+			</div>
+
+			<div class="row">
+									
+    				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+    						<div class="kar-theme-menu-product-info-box">
+                                <h4 class="menu-product-details"><a class="menu-product-title" href="#">Saftey Feature</a>
+                                </h4>
+                                
+                                <div class="menu-product-description">
+                                    <p>Airbag Collision</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>B-Call(Breakdown)</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Stolen Vehicle Tracking</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Burglar Alarm</p>
+                                </div>
+                            </div>
+                            <div class="kar-theme-menu-product-info-box">
+                                <h4 class="menu-product-details"><a class="menu-product-title" href="#">Remote Diagnostic</a>
+                                </h4>
+                               
+                                <div class="menu-product-description">
+                                    <p>Automatic Diagnosis</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Manual Diagnosis</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Scheduled Diagnosis Notification</p>
+                                </div>
+                               
+                            </div>
+                            <div class="kar-theme-menu-product-info-box">
+                                <h4 class="menu-product-details"><a class="menu-product-title" href="#">Connected Car Mobile App</a>
+                                </h4>
+                               
+                                <div class="menu-product-description">
+                                    <p>Remote Control Services</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Diagnosis View</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Health Report</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Find Subscription Information</p>
+                                </div>
+                            </div>
+    				</div>
+    				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+    						<div class="kar-theme-menu-product-info-box">
+                                <h4 class="menu-product-details"><a class="menu-product-title" href="#">After SERVICE</a>
+                                </h4>
+                              
+                                <div class="menu-product-description">
+                                    <p>Suplier Notification</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>FOTA</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Subscription Management</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Concierge Service</p>
+                                </div>
+                            </div>
+                            <div class="kar-theme-menu-product-info-box">
+                                <h4 class="menu-product-details"><a class="menu-product-title" href="#">Reports</a>
+                                </h4>
+                               
+                                <div class="menu-product-description">
+                                    <p>Diagnostic Reports</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>After Service Reports</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Vehicle Information</p>
+                                </div>
+                              
+                               
+                            </div>
+    						<div class="kar-theme-menu-product-info-box">
+                                <h4 class="menu-product-details"><a class="menu-product-title" href="#">Connected Car Web App</a>
+                                </h4>
+                               
+                                <div class="menu-product-description">
+                                    <p>O&M Web</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Customer Web</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Call Center</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Dealer App</p>
+                                </div>
+								
+                            </div>
+							<!--<div class="kar-theme-menu-product-info-box">
+                                <h4 class="menu-product-details"><a class="menu-product-title" href="#">Remote Control Services</a>
+                                </h4>
+                               
+                                <div class="menu-product-description">
+                                    <p>Engin Start/STop</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>HVAC Stop</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Door Lock/Unlock</p>
+                                </div>
+                                <div class="menu-product-description">
+                                    <p>Remote Light Horn</p>
+                                </div>
+								<div class="menu-product-description">
+                                    <p>Vehicle Loction Finder</p>
+                                </div>
+								<div class="menu-product-description">
+                                    <p>Vehicle Status check</p>
+                                </div>
+								<div class="menu-product-description">
+                                    <p>Battery Charging (for EV)</p>
+                                </div>
+								<div class="menu-product-description">
+                                    <p>Schedule Battery Charging (for EV)</p>
+                                </div>
+                            </div>-->
+    				
+					</div>
+    			</div>
+			
+		</div>
+	</section>
+	<!-- Our Deals Section End -->
+
+
+    <!-- Gallery Section Start -->
+    <!-- <section id="gallery" class="gallery-area section-padding">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="section-title">
+                        <h2>Our Gallery</h2>
+                        <h5>We have best car images collections</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="gallery-list">
+                        <ul class="nav" id="gallery-flters">
+                            <li class="filter filter-active" data-filter=".all">All</li>
+                            <li class="filter" data-filter=".repairing">Repairing</li>
+                            <li class="filter" data-filter=".carWash">Car Wash</li>
+                            <li class="filter" data-filter=".paint">Paint</li>
+                            <li class="filter" data-filter=".new">New</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery-container">
+                    
+                    <div class="col-lg-4 col-md-6 gallery-grid-item all carWash new">
+                        <div class="gallery-item">
+                            <img src="assets/images/photos/gallery-1.jpg" alt="image">
+                            <div class="gallery-img-overlay">
+                                <div class="gallery-content">
+                                    <a href="assets/images/photos/gallery-1.jpg" class="popimg"> 
+										<span class="icon">View Large <i class="fa fa-search-plus" aria-hidden="true"></i></span>
+									</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4 col-md-6 gallery-grid-item all carWash repairing">
+                        <div class="gallery-item">
+                            <img src="assets/images/photos/gallery-2.jpg" alt="image">
+                            <div class="gallery-img-overlay">
+                                <div class="gallery-content">
+                                    <a href="assets/images/photos/gallery-2.jpg" class="popimg"> 
+										<span class="icon">View Large <i class="fa fa-search-plus" aria-hidden="true"></i></span>
+									</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-6 gallery-grid-item all carWash new">
+                        <div class="gallery-item">
+                            <img src="assets/images/photos/gallery-3.jpg" alt="image">
+                            <div class="gallery-img-overlay">
+                                <div class="gallery-content">
+                                    <a href="assets/images/photos/gallery-3.jpg" class="popimg"> 
+										<span class="icon">View Large <i class="fa fa-search-plus" aria-hidden="true"></i></span>
+									</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4 col-md-6 gallery-grid-item all carWash webdesig repairingn">
+                        <div class="gallery-item">
+                            <img src="assets/images/photos/gallery-4.jpg" alt="image">
+                            <div class="gallery-img-overlay">
+                                <div class="gallery-content">
+                                    <a href="assets/images/photos/gallery-4.jpg" class="popimg"> 
+										<span class="icon">View Large <i class="fa fa-search-plus" aria-hidden="true"></i></span>
+									</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="col-lg-4 col-md-6 gallery-grid-item all carWash new repairing">
+                        <div class="gallery-item">
+                            <img src="assets/images/photos/gallery-5.jpg" alt="image">
+                            <div class="gallery-img-overlay">
+                                <div class="gallery-content">
+                                    <a href="assets/images/photos/gallery-5.jpg" class="popimg"> 
+										<span class="icon">View Large <i class="fa fa-search-plus" aria-hidden="true"></i></span>
+									</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-lg-4 col-md-6 gallery-grid-item all carWash new paint">
+                        <div class="gallery-item">
+                            <img src="assets/images/photos/gallery-6.jpg" alt="image">
+                            <div class="gallery-img-overlay">
+                                <div class="gallery-content">
+                                    <a href="assets/images/photos/gallery-6.jpg" class="popimg"> 
+										<span class="icon">View Large <i class="fa fa-search-plus" aria-hidden="true"></i></span>
+									</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4 col-md-6 gallery-grid-item all carWash new paint">
+                        <div class="gallery-item">
+                            <img src="assets/images/photos/gallery-7.jpg" alt="image">
+                            <div class="gallery-img-overlay">
+                                <div class="gallery-content">
+                                    <a href="assets/images/photos/gallery-7.jpg" class="popimg"> 
+                                        <span class="icon">View Large <i class="fa fa-search-plus" aria-hidden="true"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+                <div class="col-md-12">
+                    <div class="gallery-more-btn text-center mt-15">
+                        <a class="button" href="#">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Gallery Section End -->
+
+    <!-- Testimonials Section Start -->
+    <!-- <section id="review" class="bg-grey testimonial-area section-padding">        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>Testimonials</h2>
+                        <h5>People love us</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div id="testimonial-slide" class="owl-carousel owl-theme owl-loaded owl-drag">
+                      
+                        <div class="single-testimonial">
+                            <div class="testi-content-inner">
+                                <div class="testimonial-bio">
+                                    <div class="avatar">
+                                        <img src="assets/images/clients/testimonial-2.jpg" alt="testimonial">
+                                    </div>
+                                </div>
+                                <div class="testimonial-content">
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                    <p>Thank you very much. Very Awesome Template. I’m impressed with your service. I’ve already told my friends about your template and your quick response, thanks again!</p>
+                                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                </div>
+                                <div class="testimonial-bio">
+                                    <div class="bio-info">
+                                        <h3 class="name">Sanam Doe</h3>
+                                    </div>
+                                </div>
+                                <div class="rating-box">
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="single-testimonial">
+                            <div class="testi-content-inner">
+                            	<div class="testimonial-bio">
+                                    <div class="avatar">
+                                        <img src="assets/images/clients/testimonial-3.jpg" alt="testimonial">
+                                    </div>
+                                </div>
+                                <div class="testimonial-content">
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                    <p>Great Support, I would just like to say thank you for your prompt and effective service, for your friendly and professional support staff! I will recommend your expert company to all my friends.</p>
+                                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                </div>
+                                <div class="testimonial-bio">
+                                    <div class="bio-info">
+                                        <h3 class="name">William Hoy</h3>
+                                    </div>
+                                </div>
+                                <div class="rating-box">
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="single-testimonial">
+                            <div class="testi-content-inner">
+                                <div class="testimonial-bio">
+                                    <div class="avatar">
+                                        <img src="assets/images/clients/testimonial-4.jpg" alt="testimonial">
+                                    </div>
+                                </div>
+                                <div class="testimonial-content">
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                    <p>Wow Very Nice Team, I'm so happy with your service. You managed to exceed my expectations! You guys are very efficient and I will refer more people to your company!</p>
+                                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                </div>
+                                <div class="testimonial-bio">
+                                    <div class="bio-info">
+                                        <h3 class="name">Imaan Butt</h3>
+                                    </div>
+                                </div>
+                                <div class="rating-box">
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Testimonials Section End -->
+
+
+    <!-- Blog Section Start -->
+    <!-- <section id="blog" class="blog-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="section-title">
+                        <h2>Our Blog</h2>
+                        <h5>Stay Connected With Our Latest News</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                  <div class="col-12 col-sm-8 col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="card">
+                      <img class="card-img" src="assets/images/news/blog-1.jpg" alt="blog image">
+                      <div class="card-body">
+                        <h4 class="card-title">Which oil make our car performance better?</h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-8 col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="card">
+                      <img class="card-img" src="assets/images/news/blog-2.jpg" alt="blog image">
+                      <div class="card-body">
+                        <h4 class="card-title">How we make our car cool and clean?</h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-8 col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="card">
+                      <img class="card-img" src="assets/images/news/blog-3.jpg" alt="blog image">
+                      <div class="card-body">
+                        <h4 class="card-title">After how much time need to change Oil Filter?</h4>
+                      </div>
+                    </div>
+                  </div>
+                
+                <div class="col-md-12">
+                    <div class="blog-more-btn text-center mt-15">
+						<a class="button" href="#">View More Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Blog Section End -->
+
+    <!-- Start Reservation Area -->
+    <section id="reservation" class="kar-theme-reservation-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                    <h2>24/7 FREE SERVICES</h2>
+                    <h5>We are committed to providing our customers with quality repairs at a fair price.</h5>
+                    <div class="mt-20"><a class="reservation-btn" href="#reservation"><i class="fa fa-calendar-check-o"></i> Schedule an Appointment</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Reservation Area -->
+
+    <!-- Paertner Section Start -->
+    <!-- <div class="theme-partner-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 ">
+                    <div class="theme-single-press-content">
+                        <img src="assets/images/partners/c-1.png" alt="image" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 ">
+                    <div class="theme-single-press-content">
+                        <img src="assets/images/partners/c-2.png" alt="image" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 ">
+                    <div class="theme-single-press-content">
+                        <img src="assets/images/partners/c-3.png" alt="image" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 ">
+                    <div class="theme-single-press-content">
+                        <img src="assets/images/partners/c-4.png" alt="image" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 ">
+                    <div class="theme-single-press-content">
+                        <img src="assets/images/partners/c-1.png" alt="image" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 ">
+                    <div class="theme-single-press-content">
+                        <img src="assets/images/partners/c-2.png" alt="image" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 ">
+                    <div class="theme-single-press-content">
+                        <img src="assets/images/partners/c-3.png" alt="image" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 ">
+                    <div class="theme-single-press-content">
+                        <img src="assets/images/partners/c-4.png" alt="image" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 ">
+                    <div class="theme-single-press-content">
+                        <img src="assets/images/partners/c-1.png" alt="image" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 ">
+                    <div class="theme-single-press-content">
+                        <img src="assets/images/partners/c-2.png" alt="image" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 ">
+                    <div class="theme-single-press-content">
+                        <img src="assets/images/partners/c-3.png" alt="image" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 ">
+                    <div class="theme-single-press-content">
+                        <img src="assets/images/partners/c-4.png" alt="image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Paertner Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="bg-grey contact-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="section-title">
+                        <h2>Contact us</h2>
+                        <h5>Get in touch with us 24/7</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="form-container-box">
+                        <form class="contact-form form" id="ajax-contact" method="post" action="assets/phpscripts/contact.php">
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name*" required="required" data-error="name is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email*" required="required" data-error="valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="subject" placeholder="Subject" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="message" name="message" rows="10" placeholder="Write Your Message*" required="required" data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="button" data-text="Send Message">Send Message</button>
+                                </div>
+                                <div class="messages">
+                                    <div class="alert alert alert-success alert-dismissable alert-dismissable hidden" id="msgSubmit"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> Thank You! your message has been sent. </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+<section id="ota" class="" style="margin-bottom:25px">
+        <div class="container">
+		<div class="row">
+		<div class="col-md-12">
+<div class="section-title " style="margin-top:34px">
+                <h2>OTA DFU Bootloader configuration</h2>
+				
+			</div>
+			<p>Gecko Bootloader is included in the Gecko SDK Suite. 
+			A number of predefined configurations are available to help 
+			customers easily create new Bootloader projects for different 
+			purposes. Different bootloader configurations are recommended 
+			for different devices:	<p>
+			<p>&nbsp;</p>
+<ul class="list-group"><li class="menu-product-description">For 256kB devices, use Bluetooth in-place OTA DFU Bootloader configuration.
+</li>
+<li class="menu-product-description">For 512kB devices, use Internal Storage Bootloader (single image on 512kB device).
+
+</li>
+<li class="menu-product-description">For 1024kB devices, use Internal Storage Bootloader (single image on 1MB device).
+
+</li>
+<li class="menu-product-description">You can also use an SPI Flash Storage Bootloader (single image) if you have an SPI flash connected to the device. However, in this case it is better to implement an application level OTA DFU, see Uploading Firmware Images Using OTA DFU.
+</li>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+To create a new bootloader project:
+<p>&nbsp;</p>
+<ul class="list-group">
+<ol class="menu-product-description">Open Simplicity Studio and select your device in the Devices or Debug Adapters tab.
+</ol>
+<ol class="menu-product-description">Check the Preferred SDK under General Information in the OVERVIEW tab.
+</ol>
+<ol class="menu-product-description">Click EXAMPLE PROJECTS & DEMOS tab, and select Bootloader under Technology Type section.
+</ol>
+<ol class="menu-product-description">Select the appropriate Gecko Bootloader application type for your device (e.g., Internal Storage Bootloader), click FINISH.
+</ol>
+</div>
+</div>
+</div>
+</section>
+    <!-- Footer -->
+  <footer id="footer" class="footer-section">
+    <div class="container">
+        <div class="footer-content">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html" class="logo d-flex align-items-center">
+                              <h1 class="logo d-flex align-items-center justify-content-between"><span class="logo-shape"></span>Akkodis</h1>
+                            </a>
+                        </div>
+                      
+                      
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+ 
+  </footer>
+
+
+
+  
+  
+  
+  <!-- End Footer -->
+	
+	<!-- Back to Top Start -->
+	<div class="back-to-top">
+		<i class="fa fa-caret-up"></i><i class="fa fa-caret-up"></i>
+	</div>
+	<!-- Back to Top End -->
+	
+	<!-- Site All Jquery Js -->
+	<script src="assets/javascript/jquery-3.5.1.min.js"></script>
+	<script src="assets/javascript/bootstrap.min.js"></script>
+	<script src="assets/javascript/plugins.js"></script>
+	<script src="assets/javascript/swiper.min.js"></script>
+	<script src="assets/javascript/wow.min.js"></script>
+    <script src="assets/javascript/validator.min.js"></script>
+    <script src="assets/javascript/contact.js"></script>
+	<script src="assets/javascript/main.js"></script>
+	<script>
+ function myfunction(){
+    if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+  var myLatlng = new google.maps.LatLng(28.6071789, 77.3271378);
+var mapOptions = {
+  zoom: 10,
+  center: myLatlng,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+    var locations = [
+        ['Hyundai i20', 28.6071789, 77.3271378, 3],
+        ['Hyundai Exter', 28.624535, 77.104065, 2],
+        ['Hyundai Creta', 28.644800, 77.216721, 1],
+		['Hyundai Grand i10 Nios', 28.5954356, 77.3157519, 4],
+        ['Hyundai Venue', 28.535517, 77.391029, 5],
+        ['Hyundai Verna', 28.6071789, 77.3271378, 6]
+    ];
+	
+	 window.map = new google.maps.Map(document.getElementById('map'),mapOptions );
+	    var infowindow = new google.maps.InfoWindow();
+
+    var bounds = new google.maps.LatLngBounds();
+
+    for (i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map
+        });
+
+        bounds.extend(marker.position);
+		google.maps.event.addListener(marker, 'click', (function (marker, i) {
+		
+            return function () {
+			var contentString = '<div id="content" onclick="mapRec()">' +
+    '<div id="siteNotice">' +
+    '</div>' +
+    '<h1 id="firstHeading" class="firstHeading">'+locations[i][0]+'</h1>' +
+    '<div id="bodyContent">' +
+    '<p>The Hyundai car has 2 Petrol Engine and 1 LPG Engine on offer. The Petrol engine is 1086 cc and 1197 cc while the LPG engine is 1086 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the i10 has a mileage of 16.95 to 20.36 kmpl & Ground clearance of i10 is 165mm. The i10 is a 5 seater 4 cylinder car and has length of 3585mm, width of 1595mm and a wheelbase of 2380mm. ' +
+    
+    '</p>' +
+    '</div>' +
+    '</div>';
+	
+                infowindow.setContent(contentString);
+                infowindow.open(map, marker);
+            }
+        })(marker, i));
+		
+		
+    }
+
+    map.fitBounds(bounds);
+
+    var listener = google.maps.event.addListener(map, "idle", function () {
+        map.setZoom(3);
+        google.maps.event.removeListener(listener);
+    });
+        
+
+    }
+	
+
+//google.maps.event.addDomListener(window, "load", initialize);
+var colors = ["green", "green", "yellow", "red"];
+var lengths = ["M 100 100 L 150 100 L 150 110 L 100 110 z",
+  "M 100 100 L 140 100 L 140 110 L 100 110 z",
+  "M 100 100 L 130 100 L 130 110 L 100 110 z",
+  "M 100 100 L 120 100 L 120 110 L 100 110 z"
+]
+function mapRec(){
+var map;
+        var start = new google.maps.LatLng(28.679079,77.069710);
+        var end = new google.maps.LatLng(28.5355,77.3910);
+        var option ={
+            zoom : 10,
+            center : start 
+        };
+        map = new google.maps.Map(document.getElementById('map'),option);
+        var display = new google.maps.DirectionsRenderer();
+        var services = new google.maps.DirectionsService();
+        display.setMap(map);
+            var request ={
+                origin : start,
+                destination:end,
+                travelMode: 'DRIVING'
+            };
+            services.route(request,function(result,status){
+                if(status =='OK'){
+                    display.setDirections(result);
+                }
+            });
+			
+			
+			
+}
+</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAldON1uV9hiz3JN4qChntMUr-tnikKlPE&libraries=places"></script>
+</body>
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+</html>
